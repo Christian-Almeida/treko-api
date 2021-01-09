@@ -11,6 +11,7 @@ pipeline{
         {
           steps
             {
+              sh "chmod +x ./scripts/dropdb.sh"
               sh "npm install"
             }
         }
