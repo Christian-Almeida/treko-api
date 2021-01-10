@@ -41,8 +41,8 @@ describe('get', () => {
                 .query({ title: 'Estudar' })
                 .end((err, res) => {
                     expect(res).to.has.status(200);
-                    expect(res.body.data[0].title).to.equal('Estudar NodejS')
-                    expect(res.body.data[2].title).to.equal('Estudar MongoDB')
+                    expect(res.body.data[0].title).to.equal('Estudar MongoDB')
+                    expect(res.body.data[1].title).to.equal('Estudar NodejS')
                     done();
                 })
         })
