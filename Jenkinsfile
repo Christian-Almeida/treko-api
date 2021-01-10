@@ -27,15 +27,14 @@ pipeline{
         always {
             junit"log/*.xml"
         }
-      }
-      
-      stage("Production"){
+      } 
+    }
+     stage("Production"){
         steps{
           input message: "Deseja ir para a produção? (Clique em 'Proceed' para ir para a produção)"
           sh "echo 'Subindo em Produção'"
         }
       }
-    }
    
     
     
